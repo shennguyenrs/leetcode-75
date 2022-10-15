@@ -1,4 +1,4 @@
-package main
+package first
 
 import (
 	"log"
@@ -13,14 +13,6 @@ func runningSum(nums []int) []int {
 		result[i] = nums[i] + result[i-1]
 	}
 
-	return result
-}
-
-func sumArr(arr []int) int {
-	var result int = 0
-	for _, v := range arr {
-		result += v
-	}
 	return result
 }
 
@@ -50,7 +42,7 @@ func pivotIndex(nums []int) int {
 	return -1
 }
 
-func main() {
+func Run() {
 	testFirst := []int{1, 1, 1, 1, 1}
 	first := runningSum(testFirst)
 
